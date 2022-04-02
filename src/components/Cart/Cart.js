@@ -27,6 +27,7 @@ const Cart = ({ cart, handleRemoveToCart }) => {
             <h2 className='text-center text-xl'>Cart</h2>
             <h2 className='text-center text-sm'>Add Item: {cart.length}</h2>
             <div className={`p-2 my-3 w-11/12 mx-auto text-center rounded-full text-white ${handleCommand()}`}>{command}</div>
+            {/* Element variable */}
             <div>
                 {
                     cart.map(item =>
@@ -40,6 +41,7 @@ const Cart = ({ cart, handleRemoveToCart }) => {
                     )
                 }
             </div>
+            {/* Ternary operator */}
             <div className='text-center my-3 text-white'>
                 {
                     cart.length === 0 ?
@@ -51,8 +53,13 @@ const Cart = ({ cart, handleRemoveToCart }) => {
                             <p className='bg-green-500 p-2 rounded-full'>You got 50% discount</p>
                 }
             </div>
+            {/* && operator */}
             <div className='text-center my-3 text-white'>
-                {cart.length > 3 && <p className='bg-orange-500 p-2 rounded-full'>Discount Code: MM555X</p>}
+                {cart.length > 3 && <p className='bg-orange-500 p-2 rounded-full'>50% Discount Code: MM555X</p>}
+            </div>
+            {/* || operator  */}
+            <div className='text-center my-3 text-white'>
+                {cart.length === 0 || <p className='bg-orange-500 p-2 rounded-full'>YaY !! you buy our product</p>}
             </div>
         </div>
     );
