@@ -51,6 +51,9 @@ const Cart = ({ cart, handleRemoveToCart }) => {
                             <p className='bg-green-500 p-2 rounded-full'>You got 50% discount</p>
                 }
             </div>
+            <div className='text-center my-3 text-white'>
+                {cart.length > 3 && <p className='bg-orange-500 p-2 rounded-full'>Discount Code: MM555X</p>}
+            </div>
         </div>
     );
 };
