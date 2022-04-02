@@ -5,4 +5,4 @@
 2. react tailwind
 3. react heroIcon
 4. products api (tshirt.json)
-5. use  element  rendering & Ternary operator  rendering
+5. use  `element  rendering` , `Ternary operator  rendering` ,`&& operator`,`|| operator`
